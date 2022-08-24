@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.top-bar {
+    max-height: 36px;
+    background-color: rgb(241, 24, 42);
+}
+
+.top-bar .wrapper-text {
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    height: 36px;
+}
+
+.flex-container .selected-language,
+.flex-container .wrapper-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1112px;
+    margin: 0 auto;
+}
+
+.container .wrapper-text h6,
+.container .language-selector .wrapper-languages,
+.container .language-selector .selected-language{
+    margin-left: 80px;
+    color: white;  
+}
+
+
+.language-selector .selected-language {
+    padding: 5px;
+    max-height: 35px;
+    max-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.language-selector .selected-language::after {
+    content: '>';
+    transform: rotate(90deg);
+    margin-left: 5px;
+    color: white;
+}
+
+
+.language-selector .selected-language,
+.language-selector .wrapper-languages {
+    background-color: rgb(219, 17, 34);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+.language-selector .wrapper-languages {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.language-selector:hover .wrapper-languages{
+    max-height: 300px;
+    padding: 5px;
+    padding-left: 8px;
+    max-width: 50px;
+    transition: 0.4s;
+}
+
+.language-selector .wrapper-languages a {
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper-text {
+    font-size: 22px;
+    word-spacing: 1px;
+    display: inline;
+}
+
+
